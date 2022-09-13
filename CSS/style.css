@@ -201,6 +201,11 @@ nav .navbar-nav li .campaign {
   background-color: white;
 }
 
+.btn-close {
+  top: 15px;
+  left: 25px;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     display: none;
