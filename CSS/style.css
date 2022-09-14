@@ -208,7 +208,7 @@ nav .navbar-nav li .campaign {
 
 @media screen and (min-width: 768px) {
   #speakersection2 {
-    row-gap: 20px;
+    row-gap: 50px;
   }
 
   .speakers {
