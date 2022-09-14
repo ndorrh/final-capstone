@@ -94,7 +94,7 @@ const speakersConatiner = createElementWithClassName('div', 'row');
 addInnerHtmlAndApendToParent('', speaker, speakersConatiner);
 
 speakers.forEach((person) => {
-  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6 mb-3');
+  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6 my-3 my-md-0');
   const infoContainer = createElementWithClassName('div', 'card-body w-75 d-flex flex-column gap-2');
   const speakerName = createElementWithClassName('h5', 'card-title');
   const speakerinfo = createElementWithClassName('p', 'card-text text-danger mb-0');
