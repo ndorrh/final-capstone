@@ -94,7 +94,7 @@ const speakersConatiner = createElementWithClassName('div', 'row');
 addInnerHtmlAndApendToParent('', speaker, speakersConatiner);
 
 speakers.forEach((person) => {
-  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6 my-3 my-md-0');
+  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6 my-2 my-md-0');
   const infoContainer = createElementWithClassName('div', 'card-body w-75 d-flex flex-column gap-2');
   const speakerName = createElementWithClassName('h5', 'card-title');
   const speakerinfo = createElementWithClassName('p', 'card-text text-danger mb-0');
@@ -103,7 +103,7 @@ speakers.forEach((person) => {
 
   const appendElementsToparent = (mainContainer) => {
     addInnerHtmlAndApendToParent('', mainContainer, speakerImage);
-      addInnerHtmlAndApendToParent('', speakerImage, addimage(`${speakers[speakers.indexOf(person)].speakerImage}`, `${speakers[speakers.indexOf(person)].name}`, 'card-img-top speakers w-25'));
+    addInnerHtmlAndApendToParent('', speakerImage, addimage(`${speakers[speakers.indexOf(person)].speakerImage}`, `${speakers[speakers.indexOf(person)].name}`, 'card-img-top speakers w-25'));
     addInnerHtmlAndApendToParent('', speakerImage, infoContainer);
     addInnerHtmlAndApendToParent(`${speakers[speakers.indexOf(person)].name}`, infoContainer, speakerName);
     addInnerHtmlAndApendToParent(`${speakers[speakers.indexOf(person)].information}`, infoContainer, speakerinfo);
