@@ -163,6 +163,10 @@ nav .navbar-nav li .campaign {
   text-decoration: underline var(--color-primary);
 }
 
+.join-prog {
+  color: var(--color-primary);
+}
+
 .text-color {
   background-color: rgba(0, 0, 0, 0.2);
 }
