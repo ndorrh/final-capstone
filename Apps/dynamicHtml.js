@@ -9,7 +9,7 @@ const speakers = [
     id: 1,
     name: 'yohai benkler',
     information: 'Professor at Harvard Law School',
-    aboutSpeaker: 'Focusing on a collaborative approach in a networked environment he created the concept of co-production based on sharing such as open source software and Wikipedia. "("Main book: The Wealth of the Network, Penguin and Leviathan)',
+    aboutSpeaker: 'Focusing on a collaborative approach in a networked environment he created the concept of co-pro',
     speakerImage: 'images/speaker_01.png',
   },
 
@@ -94,7 +94,7 @@ const speakersConatiner = createElementWithClassName('div', 'row');
 addInnerHtmlAndApendToParent('', speaker, speakersConatiner);
 
 speakers.forEach((person) => {
-  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6');
+  const speakerImage = createElementWithClassName('div', 'card container-fluid d-flex flex-row border-0 col-md-6 mb-3');
   const infoContainer = createElementWithClassName('div', 'card-body w-75 d-flex flex-column gap-2');
   const speakerName = createElementWithClassName('h5', 'card-title');
   const speakerinfo = createElementWithClassName('p', 'card-text text-danger mb-0');
