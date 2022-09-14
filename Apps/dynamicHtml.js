@@ -87,7 +87,7 @@ const futuredSpeakers = createElementWithClassName('div', 'heading container-flu
 
 addInnerHtmlAndApendToParent('', speaker, futuredSpeakers);
 const heading = createElementWithClassName('h3', 'heading-secondary container-fluid text-center');
-addInnerHtmlAndApendToParent('Featured Speakers', futuredSpeakers, heading);
+addInnerHtmlAndApendToParent('Featured Instructors', futuredSpeakers, heading);
 const spanHeading = createElementWithClassName('span', 'line');
 addInnerHtmlAndApendToParent('', futuredSpeakers, spanHeading);
 const speakersConatiner = createElementWithClassName('div', 'row');
