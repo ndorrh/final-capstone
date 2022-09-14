@@ -7,50 +7,50 @@ const speakersection2 = document.getElementById('speakersection2');
 const speakers = [
   {
     id: 1,
-    name: 'Ndorrh Oswald',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
-    aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'yohai benkler',
+    information: 'Professor at Harvard Law School',
+    aboutSpeaker: 'Focusing on a collaborative approach in a networked environment he created the concept of co-production based on sharing such as open source software and Wikipedia. "("Main book: The Wealth of the Network, Penguin and Leviathan)',
     speakerImage: 'images/speaker_01.png',
   },
 
   {
     id: 2,
-    name: 'Yachai Benkler',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'Jeon Gil-nam',
+    information: 'Emeritus Professor, Korea Advanced Institute of Science and Technology (KAIST)',
     aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
     speakerImage: 'images/speaker_02.png',
   },
 
   {
     id: 3,
-    name: 'Ndorrh Oswald',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'Noh So-young',
+    information: 'Art Center Nabi Director, CC Korea Director',
     aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
     speakerImage: 'images/speaker_03.png',
   },
 
   {
     id: 4,
-    name: 'Ndorrh Oswald',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'Julia Leda',
+    information: 'Head of the Young Pirates of Europe',
     aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
     speakerImage: 'images/speaker_04.png',
   },
 
   {
     id: 5,
-    name: 'Ndorrh Oswald',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'Layla Trettikov',
+    information: 'Secretary General of the Wikimedia Foundation',
     aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
     speakerImage: 'images/speaker_05.png',
   },
 
   {
     id: 6,
-    name: 'Ndorrh Oswald',
-    information: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    name: 'Ryan Merkley',
+    information: 'Creative Commons CEO, Former Mozilla Foundation COO',
     aboutSpeaker: 'Some quick example text to build on the card title and make up the bulk of the card content.',
-    speakerImage: 'images/speaker_02.png',
+    speakerImage: 'images/speaker_06.png',
   },
 ];
 hamburger.addEventListener('click', () => {
@@ -103,7 +103,7 @@ speakers.forEach((person) => {
 
   const appendElementsToparent = (mainContainer) => {
     addInnerHtmlAndApendToParent('', mainContainer, speakerImage);
-    addInnerHtmlAndApendToParent('', speakerImage, addimage(`${speakers[speakers.indexOf(person)].speakerImage}`, 'Ndorrh Oswald speaker', 'card-img-top speakers w-25'));
+      addInnerHtmlAndApendToParent('', speakerImage, addimage(`${speakers[speakers.indexOf(person)].speakerImage}`, `${speakers[speakers.indexOf(person)].name}`, 'card-img-top speakers w-25'));
     addInnerHtmlAndApendToParent('', speakerImage, infoContainer);
     addInnerHtmlAndApendToParent(`${speakers[speakers.indexOf(person)].name}`, infoContainer, speakerName);
     addInnerHtmlAndApendToParent(`${speakers[speakers.indexOf(person)].information}`, infoContainer, speakerinfo);

@@ -206,6 +206,10 @@ nav .navbar-nav li .campaign {
   left: 25px;
 }
 
+#speakersection2 {
+  row-gap: 120px;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     display: none;
