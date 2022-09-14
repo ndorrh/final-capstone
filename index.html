@@ -26,9 +26,9 @@
   </head>
   <body>
     <!--Header Section (Toolbar)-->
-    <header class="header">
+    <header class="header container-fluid social-links">
       <div
-        class="social-links container-fluid d-none d-md-flex flex-md-row justify-content-md-end gap-3 p-md-1"
+        class=" container d-none d-md-flex flex-md-row justify-content-md-end gap-3 p-md-1"
       >
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -37,7 +37,7 @@
         <a href="#" class="logout me-2">logout</a>
       </div>
     </header>
-    <nav class="navbar navbar-expand-md bg-light container-fluid">
+    <nav class="navbar navbar-expand-md container">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -60,12 +60,15 @@
         /></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav gap-3 mb-2 mb-lg-0 w-100 justify-content-between align-items-center"
+            class="navbar-nav gap-3 mb-2  mb-lg-0 w-100 justify-content-between align-items-center "
           >
             <li class="nav-item ms-md-auto">
-              <a class="nav-link active" aria-current="page" href="about.html"
-                >About</a
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#prog">Program</a>
@@ -74,7 +77,7 @@
               <a class="nav-link" href="#join">Join</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#partners">Sponsor</a>
+              <a class="nav-link " href="#partners">Sponsor</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">News</a>
@@ -90,18 +93,18 @@
 
     <main class="container-fluid px-0">
       <section
-        class="intro container-fluid d-flex flex-column gap-4 p-md-5 p-2 p-lg-5"
+        class="intro container-fluid "
       >
-        <div class="container-fluid">
-          <h1 class="greetings">The Web Developer Bootcamp 2022</h1>
+      <div class="container d-flex flex-column gap-4 p-md-5 p-2 p-lg-5">
+        <div>
           <img
-            src="images/Blog-2-2.png"
-            class="w-100 d-md-none"
+            src="images/title.png"
+            class="w-50 d-none d-md-block"
             alt="Bootcamp banner"
           />
           <img
-            src="images/Blog-2-2.png"
-            class="w-75 d-none d-md-block"
+            src="images/title.png"
+            class="w-100 d-block d-md-none"
             alt="Bootcamp banner"
           />
         </div>
@@ -114,12 +117,14 @@
           <h3 class="date">Starting on the (THU)15.10.2022 ~ 16(FRI)</h3>
           <p class="text">@National polytechnic of Douala, Amphi theatre 250</p>
         </div>
+        </div>
       </section>
 
       <!--Programs Sections-->
       <section
-        class="container-fluid programs-wrap d-flex flex-column flex-md-column flex-lg-column justify-content-center p-md-5 p-2 p-lg-5"
+        class="container-fluid programs-wrap "
       id="prog">
+      <div class="container  d-flex flex-column flex-md-column flex-lg-column justify-content-center p-md-5 p-2 p-lg-5">
         <div
           class="container-fluid d-flex justify-content-center flex-column align-items-center my-4"
         >
@@ -227,14 +232,15 @@
            id="join"><h4
             class="container see-all-progs text-center w-75 d-none d-md-flex justify-content-center"
           >
-            See the Whole Program
+            SEE THE WHOLE PROGRAM
           </h4>
         </a>
+        </div>
       </section>
 
       <!--Featured speakers Section-->
       <div
-        class="container-fluid cont d-flex flex-column gap-4 p-md-2 p-lg-5 p-2 pb-md-4 pb-lg-4"
+        class="container cont d-flex flex-column gap-4 p-md-2 p-lg-5 p-2 pb-md-4 pb-lg-4"
         id="speakers"
       ></div>
 
@@ -252,11 +258,11 @@
 
       <div class="collapse d-md-block container-fluid p-0" id="collapseExample">
         <div
-          class="row p-md-2 p-lg-5 p-2 pb-md-4 pb-lg-4"
+          class="row container mx-auto p-md-2 p-lg-5 p-2 pb-md-4 pb-lg-4"
           id="speakersection2"
         ></div>
         <footer
-          class="bg-dark text-center container-fluid programs-wrap d-flex flex-column flex-md-column flex-lg-column justify-content-center p-md-5 p-2 p-lg-5 my-4"
+          class="bgdark text-center container-fluid prog-wrapp d-flex flex-column flex-md-column flex-lg-column justify-content-center p-md-5 p-2 p-lg-5 my-4"
         >
           <div
             class="partners heading container-fluid d-flex justify-content-center flex-column align-items-center my-4"
@@ -267,7 +273,7 @@
             <span class="line"></span>
           </div>
 
-          <div class="cont">
+          <div>
             <img
               class="partner-logo"
               src="images/mozilla-1-logo-black-and-white.png"
@@ -296,7 +302,7 @@
           </div>
         </footer>
         <div
-          class="container-fluid d-flex gap-4 flex-row justify-content-center p-2"
+          class="container d-flex gap-4 flex-row justify-content-center p-2"
         >
           <a
             href="index.html"

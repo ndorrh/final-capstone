@@ -21,8 +21,8 @@ body {
   --font-style: normal;
   --fw-primary: 600;
   --fw-secondary: 900;
-  --fs-primary: 1em;
-  --fs-secondary: 3em;
+  --fs-primary: 10px;
+  --fs-secondary: 16px;
 }
 
 .partner-logo {
@@ -54,7 +54,7 @@ body {
 .intro-text {
   border: solid white 4px;
   max-width: 500px;
-  background-color: rgba(211, 219, 219, 0.164);
+  background-color: var(--color-primary);
 }
 
 .about-intro-text {
@@ -77,19 +77,46 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.prog-wrapp {
+  background-color: var(--bgcolor-primary);
+  color: var(--color-primary);
+}
+
 .line {
   width: 30px;
   height: 1px;
   background-color: var(--color-secondary);
 }
 
+.line1 {
+  width: 15px;
+  height: 1px;
+  background-color: rgba(130, 138, 138, 0.164);
+}
+
 .prog-images {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 50px;
 }
 
 .lecture {
   width: 150px;
+  color: var(--color-secondary);
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 9px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .join {
@@ -101,7 +128,7 @@ body {
 .main-heading {
   color: var(--color-secondary);
   font-family: var(--font-family);
-  font-size: 1.5em;
+  font-size: 12px;
   font-weight: var(--fw-primary);
 }
 
@@ -139,8 +166,21 @@ nav .navbar-nav li .campaign {
   border: solid var(--color-secondary) 4px;
 }
 
+.navbar {
+  background-color: white;
+}
+
 .contain {
   min-width: 855px;
+}
+
+.introduce_main {
+  background-color: #f7f7f8;
+  background-image: url(../images/about_bg_01.png);
+  background-repeat: no-repeat;
+  height: auto;
+  overflow: auto;
+  background-size: 100%;
 }
 
 .date {
@@ -148,8 +188,8 @@ nav .navbar-nav li .campaign {
 }
 
 .speakers {
-  width: 100px;
-  height: 180px;
+  width: 110px;
+  height: 110px;
 }
 
 .see-more {
@@ -189,7 +229,7 @@ nav .navbar-nav li .campaign {
   border-bottom: solid rgba(0, 0, 0, 0.2);
 }
 
-.bg-dark {
+.bgdark {
   color: var(--color-primary);
 }
 
@@ -210,13 +250,23 @@ nav .navbar-nav li .campaign {
   left: 25px;
 }
 
+@media screen and (max-width: 768px) {
+  #navbarSupportedContent {
+    height: 100vh;
+  }
+
+  nav .navbar-nav li a {
+    font-size: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #speakersection2 {
     row-gap: 50px;
   }
 
   .speakers {
-    width: 100px;
-    height: 180px;
+    width: 110px;
+    height: 110px;
   }
 }
