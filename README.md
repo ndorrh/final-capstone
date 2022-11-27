@@ -1,7 +1,7 @@
 # Final Capstone: Wep development online website
 
 # Desktop Version
-![](/app_screenshot.png)
+![](/screenshot1.png)
 
 # Mobile Version
 ![](/projectImage.JPG)
