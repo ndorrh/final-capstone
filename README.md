@@ -1,6 +1,10 @@
+# Final Capstone: Wep development online website
+
+# Desktop Version
 ![](/app_screenshot.png)
 
-# Final Capstone: Wep development online website
+# Mobile Version
+![](/projectImage.JPG)
 
 > This project is a part of microverse training program. It was build using HTML5, CSS, JavaScript and BS5.
 It is a web application for a web development boot camp. In this project I implemented the following:
